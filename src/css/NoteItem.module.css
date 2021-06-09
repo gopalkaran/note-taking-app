@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  border-top: 4px solid #818cf8;
+  border-bottom: 4px solid #818cf8;
+}
+
+.container > h2 {
+  margin-top: 0.8rem;
+  border-bottom: 1px solid #374151;
+  padding-bottom: 0.2rem;
+  color: #374151;
+}
+
+.container > p {
+  margin-top: 0.8rem;
+  color: #374151;
+  overflow: hidden;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.hide {
+  display: none;
+}
+
+.view {
+  position: absolute;
+  top: 0;
+  right: 4rem;
+  cursor: pointer;
+  fill: white;
+  background-color: #818cf8;
+  width: 2rem;
+  padding: 0.3rem;
+  border-bottom-left-radius: 5px;
+}
+
+.delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  fill: white;
+  background-color: #818cf8;
+  width: 2rem;
+  padding: 0.3rem;
+}
+
+.edit {
+  position: absolute;
+  top: 0;
+  right: 2rem;
+  cursor: pointer;
+  fill: white;
+  background-color: #818cf8;
+  width: 2rem;
+  padding: 0.3rem;
+}
+
+.view:hover,
+.edit:hover,
+.delete:hover {
+  background-color: #4f46e5;
+}

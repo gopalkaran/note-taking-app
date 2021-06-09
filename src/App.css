@@ -1,38 +1,100 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #f3f4f6;
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* justify-content: center; */
+  gap: 2rem;
+}
+.add-icon {
+  height: 4rem;
+  width: 4rem;
+  background-color: white;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #9ca3af;
+  z-index: 99;
+  position: fixed;
+  top: 30rem;
+  right: 2rem;
+  cursor: pointer;
+}
+.add-icon svg {
+  height: 2rem;
+  width: 2rem;
+  background-color: white;
+  border-radius: 50%;
+  fill: #4f46e5;
 }
 
-.App-link {
-  color: #61dafb;
+.icon-description {
+  position: fixed;
+  top: 31rem;
+  right: 8rem;
+  padding: 0.5rem;
+  box-shadow: 0 0 10px #9ca3af;
+  color: #4f46e5;
+  font-weight: bold;
+  background: white;
+  display: none;
+  border-radius: 0.2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-icon:hover ~ .icon-description {
+  display: block;
+}
+
+.search-bar {
+  align-self: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  /* margin-top: 2rem; */
+  /* width: 20rem; */
+  width: 80%;
+  max-width: 30rem;
+}
+
+.search-bar svg {
+  width: 2rem;
+  position: absolute;
+  padding: 0.4rem;
+}
+
+.search-icon {
+  fill: #767b91;
+  left: 0.5rem;
+}
+
+.search-input {
+  padding: 1rem 3rem;
+  outline: none;
+  border: none;
+  box-shadow: 0 0 10px #9ca3af;
+  font-family: inherit;
+  border-radius: 0.2rem;
+  width: 100%;
+  /* max-width: 80%; */
+  font-size: 1rem;
+}
+.search-input:not(:placeholder-shown) ~ .search-delete {
+  display: block;
+}
+
+.search-delete {
+  fill: #c7ccdb;
+  right: 0.5rem;
+  display: none;
+  cursor: pointer;
 }

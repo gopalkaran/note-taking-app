@@ -1,0 +1,36 @@
+input {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  width: 60%;
+  max-width: 500px;
+}
+
+textarea {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  width: 60%;
+  max-width: 500px;
+  height: 20vh;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 2.5rem;
+  cursor: pointer;
+  border: none;
+  background: #4338ca;
+  color: #fff;
+  font-size: medium;
+  border-radius: 20px;
+}
+
+.searchbar {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  width: 60%;
+  max-width: 500px;
+}
