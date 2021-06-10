@@ -25,8 +25,8 @@
   box-shadow: 0 0 20px #9ca3af;
   z-index: 99;
   position: fixed;
-  top: 30rem;
-  right: 2rem;
+  bottom: 6rem;
+  right: 1rem;
   cursor: pointer;
 }
 .add-icon svg {
